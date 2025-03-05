@@ -3,6 +3,11 @@ pipeline {
     agent any
 
     stages {
+        stage("welcome"){
+            steps{
+                echo "This is python flash simple site"
+            }
+        }
         stage("hello") {
             steps {
                 script {
