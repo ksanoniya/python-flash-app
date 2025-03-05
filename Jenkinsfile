@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage("welcome"){
             steps{
-                echo "This is python flash simple sites"
+                echo "This is python flash simple sites.."
             }
         }
         stage("hello") {
