@@ -44,7 +44,7 @@ pipeline {
 
         stage('Deploy with Docker Compose') {
             steps {
-                sh "docker-compose up -d"  // Change to "docker compose up -d" if using Docker Compose v2
+                sh "docker compose down && docker-compose up -d"  // Change to "docker compose up -d" if using Docker Compose v2
             }
         }
     }
