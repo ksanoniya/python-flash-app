@@ -14,7 +14,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 script {
-                    gitCode("https://github.com/ksanoniya/python-flash-app.git", "main")
+                    gitClone("https://github.com/ksanoniya/python-flash-app.git", "main")
                 }
             }
         }
